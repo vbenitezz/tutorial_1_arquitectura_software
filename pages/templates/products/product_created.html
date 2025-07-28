@@ -1,0 +1,14 @@
+{% extends 'pages/base.html' %}
+{% block title %} {{title}} {% endblock %}
+{% block header_title %} {{subtitle}} {% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <div class="alert alert-success text-center" role="alert" style="color: #1ABC9C;">
+        <h4 class="alert-heading" style="color: #1ABC9C;">Product created</h4>
+        <p style="color: #1ABC9C;">Your product has been successfully added to the store</p>
+        <hr>
+        <a href="{% url 'index' %}" class="btn btn-primary" style="background-color: #2C3E50; border-color: #2C3E50;">Back to product list</a>
+
+    </div>
+</div>
+{% endblock %}
